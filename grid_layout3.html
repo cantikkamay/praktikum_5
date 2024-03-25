@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Belajar Grid</title>
+  <style>
+    .grid-container {
+        display: grid;
+        grid-gap: 50px;
+        background-color: #2196F3;
+        padding: 10px;
+        grid-template-columns: auto auto auto auto;
+    }
+    .item1 {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+        grid-column: 1/4;
+    }
+    .item {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+    }
+  </style>
+<body>
+<div class="grid-container">
+    <div class="item1">1</div>
+    <div class="item1">2</div>
+    <div class="item1">3</div>
+    <div class="item1">4</div>
+    <div class="item1">5</div>
+    <div class="item1">6</div>
+    <div class="item1">7</div>
+    <div class="item1">8</div>
+</div>
+<div>
+    Kesimpulan : properti CSS Grid seperti `grid-template-columns: auto auto auto auto;` untuk menentukan bahwa grid akan memiliki 
+    empat kolom dengan lebar yang disesuaikan secara otomatis dengan konten di dalamnya.
+</div>
+<br>
+<div>
+    Kesimpulan Skenario 1 : Dengan menggunakan properti `grid-template-rows`, kita dapat menentukan jumlah 
+    dan lebar baris grid. Pada kode program ini, elemen pertama (item1) diberi properti `grid-row: 1 / 4;` sehingga menempati baris dari 1 hingga 4 dalam grid. 
+    Ini memberikan kontrol yang lebih besar terhadap penataan elemen dalam grid, memungkinkan untuk merancang tata letak yang lebih kompleks dan responsif.
+</div>
+<br>
+<div>
+    Kesimpulan Skenario 2 : penggunaan properti grid-column dengan nilai 1 / 4 menunjukkan bahwa elemen tersebut akan menempati kolom dari kolom pertama hingga kolom 
+    sebelum kolom keempat dalam grid.
+</div>
+</div>
+</body>

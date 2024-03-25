@@ -1,0 +1,56 @@
+body{
+    font-size: 10vm;
+    margin : 20px;
+    box-sizing: border-box;
+}
+
+.halaman{
+    display: grid;
+    grid-template-columns:1fr 2fr;
+    grid-template-rows: auto auto 200px;
+    grid-gap: 0px;
+}
+.header{
+    grid-column: 1/3;
+    grid-row: 1;
+    background-color: skyblue;
+    height: auto;
+    
+}
+.logo{
+    border : 3px solid #fff7f1;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+.menu{
+    background-color: moccasin;
+    height: 600px;
+}
+.menu ul{
+    list-style-type: none;
+    padding: 5px 10px 0px 10px;
+}
+.menu ul li a {
+    display: block;
+    padding: 8px 10px;
+    text-decoration: none;
+}
+.menu ul li a:hover {
+    background-color: #fff7f1;
+    color: black;
+}
+.active {
+    background-color:#fff7f1;
+    color:black;
+}
+.content{
+    background-color: thistle;
+}
+.footer{
+    grid-column: 1/3;
+    grid-row: 3;
+    background-color: pink;
+}

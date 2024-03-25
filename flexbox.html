@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Belajar Flexbox</title>
+    <style>
+        .wadah_flex {
+            display: flex;
+            background-color: lightblue;
+            flex-flow: row wrap;
+            justify-content: center; 
+        }
+        .wadah_flex div {
+            background-color: #008FFF;
+            padding: 20px;
+            margin: 10px;
+            font-size: 30px;
+        }
+        p {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wadah_flex">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+    <p>Kesimpulan Skenario 1 : Dengan menambahkan warna latar belakang dan memberikan padding, font size
+        serta margin pada elemen-elemen dalam flexbox, kita dapat membuat tata 
+        letak yang lebih menarik dan terstruktur.</p>
+    <p>Kesimpulan Skenario 2 : Penggunaan display flex memungkinkan tata letak yang fleksibel dan responsif 
+        dalam merancang halaman web. Dengan memanfaatkan properti-flex terkait, seperti justify-content, align-items, 
+        dan flex-wrap, kita dapat mengontrol posisi dan penataan elemen-elemen di dalam wadah flex sesuai kebutuhan desain.</p>
+    <p>Kesimpulan Skenario 3 : Dengan menambahkan lebih banyak elemen di dalam wadah flex, kita dapat melihat bagaimana 
+        flexbox secara dinamis menyesuaikan tata letak elemen-elemen tersebut. Hal ini memungkinkan kita untuk merancang 
+        tata letak yang responsif tanpa harus secara manual menentukan ukuran atau posisi setiap elemen secara eksplisit.</p>
+    <p>Kesimpulan Skenario 4 : Dengan menggunakan properti `flex-wrap`, kita dapat mengatur bagaimana flex items 
+       akan dibungkus ke baris atau kolom baru saat mencapai batas flex container. Hal ini memungkinkan kita untuk 
+       mengelola tata letak elemen dengan lebih fleksibel dalam wadah flex.</p>
+    <p>Kesimpulan Skenario 5 : Dengan menggunakan properti `flex-flow: row wrap;`, kita dapat menggabungkan properti 
+       `flex-direction` dan `flex-wrap` dalam satu baris kode. Hal ini memungkinkan kita untuk mengontrol arah tata letak 
+       elemen flex dan pembungkusan elemen-elemen saat mencapai batas flex container secara lebih efisien.</p>
+    <p>Kesimpulan Skenario 6 : Properti `justify-content` memungkinkan kita untuk mengatur penempatan elemen-elemen flex 
+       secara horizontal dalam wadah flex. Dengan nilai yang berbeda-beda, seperti `center`, `flex-start`, `flex-end`, 
+       `space-between`, dan `space-around`, kita dapat mengatur posisi elemen-elemen tersebut sesuai dengan kebutuhan desain, 
+       memberikan kontrol yang lebih besar terhadap tata letak keseluruhan.</p>
+</body>
+</html>
